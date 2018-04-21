@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   body {
+     background-color: #b3e6ff
+  }
+          
+    h2 {
+     color: #404040;
+     text-align: center;
+     font-size: 35px;
+  }
+   #PR {
+     text-align: center;
+     font-family: "Times New Roman", Times, serif;
+  }
+   #inst {
+       text-align: center;
+  }
+</style>
+<script>
+     function publicPrivate() {
+      if (document.getElementById("p1").checked) { // if this radio button is clicked 
+          var publicC = ["University of Illinois Urbana Champaign","Illinois State University", "Illinois Wesleyan University", "Eastern Illinois University","Southern Illinois University CARBONDALE","Southern Illinois University Edwardsville","University of Illinois at Chicago","University of Illinois at Springfield","Chicago State University","Columbia College Chicago","Nothern Illinois University"];
+          var rand1 = publicC[Math.floor(Math.random() * publicC.length)]; //creates a new random variable and chooses one string from the array
+             document.getElementById("demo").innerHTML = "Your public school: " + rand1; // print out the randomized variable
+      } else if (document.getElementById("p2").checked) { // if this button is selected 
+          var privateC = ["Loyola","Olivet Nazarene University","Illinois Wesleyan University","Greenville","Bradley","Dominicana University", "DePaul University", "Augustana College", "Benedictine University", "Aurora University","Concordia University","Milikin University","Monmouth College","University of Chicago","Wheaton College","University of St Francis","Trinity Christian College","Saint Xavier University","Knox College","Lake Forest College","Judson University","Elmhurst College","Blackburn College","Illinois College","Lewis University","Kendall College","Lincoln Christian University","MacMurray College","Mckendree University","National Louis University","North Central College","North Park University","Northeastern Illinois University","Northwestern Illinois University","Quincy University","Robert Morris University Illinois","Saint Augustine College","Roosevelt University"];
+          var rand2 = privateC[Math.floor(Math.random() * privateC.length)];
+             document.getElementById("demo").innerHTML = "Your private school: " + rand2;
+      }
+    }
+ 
+     function sizeC() {
+       if (document.getElementById("s1").checked) { 
+          var smallC = ["Olivet Nazarene University","Illinois Wesleyan University","Greenville", "Dominicana University","Augustana College", "Concordia University", "Milikin University","Monmouth College","Wheaton College","University of St Francis","Trinity Christian College","Saint Xavier University","Knox College","Lake Forest College","Judson University","Eureka College","Elmhurst College","Chicago State University","Blackburn College","Illinois College","Kendall College","Lincoln College","Lincoln Christian University","MacMurray College","Mckendree University","National Louis University","North Central College","North Park University","Quincy University","Robert Morris University Illinois","Saint Augustine College"];
+          var rand3 = smallC[Math.floor(Math.random() * smallC.length)];
+            document.getElementById("people").innerHTML = "Your small sized school: " + rand3;
+      } else if (document.getElementById("s2").checked) {
+         var midC = ["Bradley", "Western Illinois University", "Eastern Illinois University","Benedictine University", "Aurora University","Loyola University","Southern Illinois University CARBONDALE","Southern Illinois University Edwardsville","University of Chicago","University of Illinois at Springfield","Columbia College Chicago","Lewis University","Northeastern Illinois University","Northern Illinois University","Roosevelt University"];
+         var rand4 = midC[Math.floor(Math.random() * midC.length)];
+          document.getElementById("people").innerHTML = "Your midsized school: " + rand4;
+          } else if (document.getElementById("s3").checked) {
+         var largeC = ["University of Illinois Urbana Champaign", "DePaul University","University of Illinois at Chicago","Illinois State University","Northwestern University"];
+          var rand5 = largeC[Math.floor(Math.random() * largeC.length)];
+           document.getElementById("people").innerHTML = "Your large sized school: " + rand5;
+       }
+     } 
+   function acceptance() {
+       if (document.getElementById("a1").checked) {
+           var easy = ["Illinois State University","Aurora University","Olivet Nazarene University","Southern Illinois University CARBONDALE","Southern Illinois University Edwardsville","University of Illinois at Chicago","Wheaton College","Saint Xavier University","Judson University","Elmhurst College","Kendall College","National Louis University","North Park University","Northeastern Illinois University","Roosevelt University"];
+           var rand8 = easy[Math.floor(Math.random() * easy.length)];
+            document.getElementById("acceptan").innerHTML = "Acceptance: " + rand8;
+      } else if (document.getElementById("a2").checked) {
+           var ok  = ["Bradley", "Illinois Wesleyan University", "Western Illinois University","Greenville", "Dominicana University", "DePaul University", "Augustana College", "Concordia University","Loyola University","Milikin University","Monmouth College","University of Illinois at Springfield","Trinity Christian College","Knox College","Eureka College","Eureka College","Blackburn College","Illinois College","Lewis University","Lincoln College","Lincoln Christian University","MacMurray College","Mckendree University","North Central College","Northern Illinois University","Quincy University"];
+           var rand9 = ok[Math.floor(Math.random() * ok.length)];
+            document.getElementById("acceptan").innerHTML = "Acceptance: " + rand9;
+      } else if (document.getElementById("a3").checked) {
+           var hard  = ["Eastern Illinois University","University of Chicago","University of Illinois Urbana Champaign","University of St Francis","Lake Forest University","Chicago State University","Northwestern University","Robert Morris University Illinois"];
+           var rand0 = hard[Math.floor(Math.random() * hard.length)];
+            document.getElementById("acceptan").innerHTML = "Acceptance: " + rand0;
+      }
+   }
+   
+   function scores() {
+     if (document.getElementById("sa1").checked) {
+        var diff = ["Bradley","Illinois Wesleyan University","Loyola University","University of Chicago","University of Illinois at Chicago","University of Illinois at Urbana Champaign","Wheaton College","Blackburn College","Northwestern University"]; 
+        var randk = diff[Math.floor(Math.random() * diff.length)];
+        document.getElementById("satscore").innerHTML = "Based on SAT: " + randk;
+   } else if (document.getElementById("sa2").checked) {
+        var ha = ["Bradley","Illinois State University","Greenville","Loyola University","Olivet Nazarene","Southern Illinois University CARBONDALE","Trinity Christian College","Eureka College","Elmhurst College","Chicago State University","North Central College","North Park University","Quincy University"];
+        var rand = ha[Math.floor(Math.random() * ha.length)];
+        document.getElementById("satscore").innerHTML = "Based on SAT: " + rand;
+   } else if (document.getElementById("sa3").checked) {
+          var avr  = ["Western Illinois University","Eastern Illinois University", "Dominicana University","Aurora University", "Concordia University","Milikin University","Monmouth College","Southern Illinois University CARBONDALE","Southern Illinois University","University of Illinois at Springfield","University of St Francis","Saint Xavier University","Judson University","Eureka College","Lewis University","Lincoln College","Lincoln Christian University","MacMurray University","Mckendree University","Northeastern Illinois University","Nothern Illinois University","Roosevelt University"];
+         var randa = avr[Math.floor(Math.random() * avr.length)];
+          document.getElementById("satscore").innerHTML = "Based On SAT: " + randa;
+    }
+  }
+  function comC() {
+    if (document.getElementById("collegeCom").checked) {
+    var comm = ["Danville Area Community College","College of DuPage","East St. Louis Community College Center","Elgin Community College","Harper College","Heartland Community College","Highland Community College","Illinois Central College","IL Eastern Community Colleges","IL Valley Community College","Joliet Junior College","Kankakee Community College","Kaskaskia College","Kishwaukee College","College of Lake County","Lake Land College","Lewis & Clark Community College","Lincoln Land Community College","John A. Logan College","McHenry County College","Moraine Valley Community College","Morton College","Oakton Community College","Parkland College","Prairie State College","Rend Lake College","Richland Community College","Rock Valley College","Carl Sandburg College","Sauk Valley Community College","Shawnee Community College","South Suburban College","Southeastern Illinois College","Southwestern Illinois College","Spoon River College","Triton College","Waubonsee Community College","John Wood Community College"];
+    var randl = comm[Math.floor(Math.random() * comm.length)];
+    document.getElementById("c1").innerHTML = "Community College Option: " + randl;
+      }
+  }
+  
+</script>
+</head>
+<body>
+    <div>
+      <div>
+        <h1 id="PR">Preferences</h1>
+        <p id="inst"> Each question will give you a different college options that can broaden your future choices!<br/> *Keep hitting submit to get a different choice* </p>
+      </div>
+      <a href="completeList.html"><button>Complete List each divided into categories</button></a>
+ <div id="pop">
+             <h1>Public or Private: </h1>
+               <input type="radio" name="pop" id="p1" value="public"> Public <br>
+               <input type="radio" name="pop" id="p2" value="private"> Private<br>
+               <button type="submit" onclick="publicPrivate()">Submit</button>
+                     <p id="demo"></p>     
+               
+        <div id="size">
+             <h1>Size:</h1>
+               <input type="radio" name="size" id="s1" value="small"> Small (5,000 or less) <br>
+               <input type="radio" name="size" id="s2" value="midsize"> Midsized (5,000- 15,000) <br>
+               <input type="radio" name="size" id="s3" value="large"> Large (15,000+)<br> 
+               <button type="submit" onclick="sizeC()">Submit</button>
+                       <p id="people"></p>
+                       
+    <div id="accept">
+             <h1> Acceptance Rate: </h1>
+               <input type="radio" name="accept" id="a1" value="easy"> 80% - 100% <br>
+               <input type="radio" name="accept" id="a2" value="ok"> 70% - 50% <br>
+               <input type="radio" name="accept" id="a3" value="hard"> 40% or lower<br> 
+               <button type="submit" onclick="acceptance()">Submit</button>
+                       <p id="acceptan"></p> 
+     
+      <div id="sat">
+             <h1> Your SAT scores equivalent: </h1>
+               <input type="radio" name="sat" id="sa1" value="high"> 1300 - 1500 <br>
+               <input type="radio" name="sat" id="sa2" value="middle"> 1300 - 1200 <br>
+               <input type="radio" name="sat" id="sa3" value="avr"> 1000 - <br> 
+               <button type="submit" onclick="scores()">Submit</button>
+               <p id="satscore"></p>
+                    
+     <div id ="cc">
+        <h1> Illinois has 39 Community College! Click sumbit for a communnity college option </h1>
+            <input type="radio" name="cc" id="collegeCom" value="twoy"> 39 Communnity <br>
+            <button type="submit" onclick="comC()">Submit</button>
+            <p id="c1"></p>
+          </div>
+        </div>
+      </div>
+   </div>
+   </div>
+   </div>
+<!-- > if no preference button clicked then random college </-->
+  </body>
+</html>
