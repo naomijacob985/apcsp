@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style>
+  body {
+    background-color: #b3e6ff
+  }
+  #title{
+    text-align: center;
+  }
+</style>
+  </head>  
+  <body>
+<a href="index.html"><button>Home</button></a>
+ <h1 id="title"> Here is a complete list of all the colleges in Illinois that fit the specfic criteria: </h1>
+    <h1>Public Schools</h1>
+      <p id="publicC"></p>
+    <h1>Private Schools</h1>
+      <p id="privateC"></p>
+<div id="size">
+  <h1>Small Schools</h1>
+    <p id="smallS"></p>
+  <h1>Midsized Schools</h1>
+    <p id="midS"></p>
+  <h1>Large Schools</h1>
+    <p id="largeS"></p>
+</div>
+<div id="rates">
+  <h1>80-100% Acceptance</h1>
+     <p id="ac1"></p>
+  <h1>79-50% Acceptance</h1>
+     <p id="ac2"></p>
+  <h1>49% - Acceptance</h1>
+    <p id="ac3"></p>
+</div>
+<div id="score">
+  <h1>1300-1500 SAT Scores</h1>
+     <p id="sa1"></p>
+<h1>1300-1200 SAT Scores</h1>
+     <p id="sa2"></p>
+<h1>1100- SAT Scores</h1>
+     <p id="sa3"></p>
+</div>
+<div id="com">
+<h1>Community Colleges</h1>
+     <p id="cc"></p>
+</div>
+  <script>
+var pubC = ["University of Illinois Urbana Champaign","Illinois State University", "Illinois Wesleyan University", "Eastern Illinois University","Southern Illinois University CARBONDALE","Southern Illinois University Edwardsville","University of Illinois at Chicago","University of Illinois at Springfield","Chicago State University","Columbia College Chicago","Nothern Illinois University"];
+var i, len, text;
+for (i = 0, len = pubC.length, text = ""; i < len; i++) {
+    text += pubC[i] + "<br>";
+}
+    document.getElementById("publicC").innerHTML = text;
+
+var privC = ["Loyola","Olivet Nazarene University","Illinois Wesleyan University","Greenville","Bradley","Dominicana University", "DePaul University", "Augustana College", "Benedictine University", "Aurora University","Concordia University","Milikin University","Monmouth College","University of Chicago","Wheaton College","University of St Francis","Trinity Christian College","Saint Xavier University","Knox College","Lake Forest College","Judson University","Elmhurst College","Blackburn College","Illinois College","Lewis University","Kendall College","Lincoln Christian University","MacMurray College","Mckendree University","National Louis University","North Central College","North Park University","Northeastern Illinois University","Northwestern Illinois University","Quincy University","Robert Morris University Illinois","Saint Augustine College","Roosevelt University"];
+var i, len, text;
+for (i = 0, len = privC.length, text = ""; i < len; i++) {
+    text += privC[i] + "<br>";
+}
+    document.getElementById("privateC").innerHTML = text;
+
+var smallC = ["Olivet Nazarene University","Illinois Wesleyan University","Greenville", "Dominicana University","Augustana College", "Concordia University", "Milikin University","Monmouth College","Wheaton College","University of St Francis","Trinity Christian College","Saint Xavier University","Knox College","Lake Forest College","Judson University","Eureka College","Elmhurst College","Chicago State University","Blackburn College","Illinois College","Kendall College","Lincoln College","Lincoln Christian University","MacMurray College","Mckendree University","National Louis University","North Central College","North Park University","Quincy University","Robert Morris University Illinois","Saint Augustine College"];
+var i, len, text;
+for (i = 0, len = smallC.length, text = ""; i < len; i++) {
+    text += smallC[i] + "<br>";
+}
+    document.getElementById("smallS").innerHTML = text;
+
+var midC = ["Bradley", "Western Illinois University", "Eastern Illinois University","Benedictine University", "Aurora University","Loyola University","Southern Illinois University CARBONDALE","Southern Illinois University Edwardsville","University of Chicago","University of Illinois at Springfield","Columbia College Chicago","Lewis University","Northeastern Illinois University","Northern Illinois University","Roosevelt University"];
+var i, len, text;
+for (i = 0, len = midC.length, text = ""; i < len; i++) {
+    text += midC[i] + "<br>";
+}
+    document.getElementById("midS").innerHTML = text;
+
+var largeC = ["University of Illinois Urbana Champaign", "DePaul University","University of Illinois at Chicago","Illinois State University","Northwestern University"];
+var i, len, text;
+for (i = 0, len = largeC.length, text = ""; i < len; i++) {
+    text += largeC[i] + "<br>";
+}
+    document.getElementById("largeS").innerHTML = text;
+    
+var accept1 = ["Illinois State University","Aurora University","Olivet Nazarene University","Southern Illinois University CARBONDALE","Southern Illinois University Edwardsville","University of Illinois at Chicago","Wheaton College","Saint Xavier University","Judson University","Elmhurst College","Kendall College","National Louis University","North Park University","Northeastern Illinois University","Roosevelt University"];
+var i, len, text;
+for (i = 0, len = accept1.length, text = ""; i < len; i++) {
+    text += accept1[i] + "<br>";
+}
+    document.getElementById("ac1").innerHTML = text;
+    
+var accept2 = ["Bradley", "Illinois Wesleyan University", "Western Illinois University","Greenville", "Dominicana University", "DePaul University", "Augustana College", "Concordia University","Loyola University","Milikin University","Monmouth College","University of Illinois at Springfield","Trinity Christian College","Knox College","Eureka College","Eureka College","Blackburn College","Illinois College","Lewis University","Lincoln College","Lincoln Christian University","MacMurray College","Mckendree University","North Central College","Northern Illinois University","Quincy University"];
+var i, len, text;
+for (i = 0, len = accept2.length, text = ""; i < len; i++) {
+    text += accept2[i] + "<br>";
+}
+    document.getElementById("ac2").innerHTML = text;    
+    
+var accept3 = ["Eastern Illinois University","University of Chicago","University of Illinois Urbana Champaign","University of St Francis","Lake Forest University","Chicago State University","Northwestern University","Robert Morris University Illinois"];
+var i, len, text;
+for (i = 0, len = accept3.length, text = ""; i < len; i++) {
+    text += accept3[i] + "<br>";
+}
+    document.getElementById("ac3").innerHTML = text;    
+    
+var sat1 = ["Bradley","Illinois Wesleyan University","Loyola University","University of Chicago","University of Illinois at Chicago","University of Illinois at Urbana Champaign","Wheaton College","Blackburn College","Northwestern University"];
+var i, len, text;
+for (i = 0, len = sat1.length, text = ""; i < len; i++) {
+    text += sat1[i] + "<br>";
+}
+    document.getElementById("sa1").innerHTML = text;    
+    
+var sat2 = ["Bradley","Illinois State University","Greenville","Loyola University","Olivet Nazarene","Southern Illinois University CARBONDALE","Trinity Christian College","Eureka College","Elmhurst College","Chicago State University","North Central College","North Park University","Quincy University"];
+var i, len, text;
+for (i = 0, len = sat2.length, text = ""; i < len; i++) {
+    text += sat2[i] + "<br>";
+}
+    document.getElementById("sa2").innerHTML = text;
+    
+var sat3 = ["Western Illinois University","Eastern Illinois University", "Dominicana University","Aurora University", "Concordia University","Milikin University","Monmouth College","Southern Illinois University CARBONDALE","Southern Illinois University","University of Illinois at Springfield","University of St Francis","Saint Xavier University","Judson University","Eureka College","Lewis University","Lincoln College","Lincoln Christian University","MacMurray University","Mckendree University","Northeastern Illinois University","Nothern Illinois University","Roosevelt University"];
+var i, len, text;
+for (i = 0, len = sat3.length, text = ""; i < len; i++) {
+    text += sat3[i] + "<br>";
+}
+    document.getElementById("sa3").innerHTML = text;    
+    
+var coC = ["Danville Area Community College","College of DuPage","East St. Louis Community College Center","Elgin Community College","Harper College","Heartland Community College","Highland Community College","Illinois Central College","IL Eastern Community Colleges","IL Valley Community College","Joliet Junior College","Kankakee Community College","Kaskaskia College","Kishwaukee College","College of Lake County","Lake Land College","Lewis & Clark Community College","Lincoln Land Community College","John A. Logan College","McHenry County College","Moraine Valley Community College","Morton College","Oakton Community College","Parkland College","Prairie State College","Rend Lake College","Richland Community College","Rock Valley College","Carl Sandburg College","Sauk Valley Community College","Shawnee Community College","South Suburban College","Southeastern Illinois College","Southwestern Illinois College","Spoon River College","Triton College","Waubonsee Community College","John Wood Community College"];
+var i, len, text;
+for (i = 0, len = coC.length, text = ""; i < len; i++) {
+    text += coC[i] + "<br>";
+}
+    document.getElementById("cc").innerHTML = text;
+  
+   
+  </script>
+  </body>
+</html>
